@@ -1,0 +1,142 @@
+/* Estilos globales */
+body {
+    font-family: Bold, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f22344; /* Fondo gris claro */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #111; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background-color: #555; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Cambio de color de fuente para el texto en la barra de navegación */
+nav a {
+    color: #1af3f0f2; /* Cambio de color de fuente a gris claro */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #555; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilos para los formularios */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #111; /* Fondo blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para los contenedores de caricaturas, paisajes y anime */
+.caricaturas-container {
+    display: grid;
+    justify-content: center;
+    align-items: right;
+    flex-wrap: wrap;
+}
+
+/* Estilos para las imágenes de caricaturas, paisajes y anime */
+.caricatura {
+    border: 5px solid #333; /* Borde gris oscuro */
+    padding: 70px;
+    margin: 10px;
+    max-width: 200px;
+}
+
+/* Estilos para el menú de navegación */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu > li {
+    display: inline;
+    position: absolute;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Estilos para el menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+    color: #ff0000; /* Color de fuente rojo */
+}
+
+/* Estilos para las imágenes en el menú */
+.submenu img {
+    display: block;
+    margin: 10px auto; /* Centrar las imágenes vertical y horizontalmente con un margen de 10px */
+    border: 2px solid #333; /* Borde gris oscuro */
+}
+
+/* Estilos para las imágenes */
+img {
+    display: block;
+    margin: 10px auto; /* Centrar las imágenes vertical y horizontalmente con un margen de 10px */
+    border: 2px solid #333; /* Borde gris oscuro */
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    /* Redefinir el tamaño máximo del formulario para pantallas más pequeñas */
+    form {
+        max-width: 150%;
+    }
+
+    /* Cambiar el diseño de las caricaturas en pantallas más pequeñas */
+    .caricatura {
+        max-width: 100%;
+    }
+
+    /* Ajustar el tamaño de las imágenes en el menú desplegable en pantallas más pequeñas */
+    .submenu img {
+        max-width: 100%;
+    }
+
+    /* Otras modificaciones de estilo para pantallas más pequeñas si es necesario */
+}
+
